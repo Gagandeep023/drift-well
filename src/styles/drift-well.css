@@ -1,0 +1,239 @@
+.dw-container {
+  position: relative;
+  font-family: 'Courier New', Courier, monospace;
+  background: #0a0a0a;
+  color: #e0e0e0;
+  border: 1px solid #1a1a1a;
+  border-radius: 8px;
+  overflow: hidden;
+  user-select: none;
+}
+
+.dw-canvas {
+  display: block;
+  cursor: crosshair;
+}
+
+.dw-canvas-wrapper {
+  position: relative;
+}
+
+/* HUD */
+.dw-hud {
+  padding: 8px 12px;
+  background: #111111;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.dw-hud-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 4px;
+}
+
+.dw-hud-row:last-child {
+  margin-bottom: 0;
+}
+
+.dw-hud-level {
+  font-size: 13px;
+  font-weight: bold;
+  color: #64ffda;
+}
+
+.dw-hud-score {
+  font-size: 12px;
+  color: #999;
+  flex: 1;
+  text-align: right;
+}
+
+.dw-hud-checkpoints {
+  font-size: 12px;
+  color: #64ffda;
+  white-space: nowrap;
+}
+
+.dw-hud-help {
+  background: none;
+  border: 1px solid #333;
+  color: #999;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.dw-hud-help:hover {
+  color: #64ffda;
+  border-color: #64ffda;
+}
+
+/* Energy bar */
+.dw-energy-bar {
+  flex: 1;
+  height: 14px;
+  background: #1a1a1a;
+  border-radius: 7px;
+  position: relative;
+  overflow: hidden;
+}
+
+.dw-energy-fill {
+  height: 100%;
+  border-radius: 7px;
+  transition: width 0.1s linear, background-color 0.3s;
+}
+
+.dw-energy-label {
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 9px;
+  color: #0a0a0a;
+  font-weight: bold;
+}
+
+/* Overlays */
+.dw-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(10, 10, 10, 0.92);
+  z-index: 10;
+  padding: 24px;
+}
+
+.dw-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #64ffda;
+  margin: 0 0 8px;
+  text-align: center;
+}
+
+.dw-tagline {
+  font-size: 14px;
+  color: #999;
+  margin: 0 0 20px;
+  font-style: italic;
+}
+
+/* Rules */
+.dw-rules-list {
+  text-align: left;
+  max-width: 360px;
+  margin-bottom: 20px;
+}
+
+.dw-rules-list h3 {
+  font-size: 16px;
+  color: #64ffda;
+  margin: 0 0 8px;
+}
+
+.dw-rules-list p {
+  font-size: 13px;
+  color: #ccc;
+  margin: 0 0 12px;
+  line-height: 1.5;
+}
+
+.dw-rules-list ol {
+  margin: 0 0 12px;
+  padding-left: 20px;
+}
+
+.dw-rules-list li {
+  font-size: 12px;
+  color: #bbb;
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+
+.dw-tip {
+  font-size: 11px;
+  color: #64ffda;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+/* Buttons */
+.dw-btn {
+  background: transparent;
+  border: 1px solid #64ffda;
+  color: #64ffda;
+  padding: 8px 24px;
+  font-family: inherit;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.dw-btn:hover {
+  background: #64ffda;
+  color: #0a0a0a;
+}
+
+.dw-btn-primary {
+  background: #64ffda;
+  color: #0a0a0a;
+  font-weight: bold;
+}
+
+.dw-btn-primary:hover {
+  background: #4de8c8;
+}
+
+.dw-btn-row {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+/* Game Over stats */
+.dw-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 16px 0;
+  text-align: center;
+}
+
+.dw-stat {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  font-size: 14px;
+}
+
+.dw-stat-label {
+  color: #999;
+}
+
+.dw-stat-value {
+  color: #e0e0e0;
+  font-weight: bold;
+}
+
+.dw-new-high {
+  color: #64ffda;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 8px 0 0;
+}
