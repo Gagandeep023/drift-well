@@ -17,7 +17,13 @@ import { DriftWell } from '@gagandeep023/drift-well/frontend';
 import '@gagandeep023/drift-well/frontend/styles.css';
 
 function App() {
-  return <DriftWell width={600} height={500} onGameOver={(score) => console.log(score)} />;
+  return (
+    <DriftWell
+      width={600}
+      height={500}
+      onGameOver={(score) => console.log(score)}
+    />
+  );
 }
 ```
 

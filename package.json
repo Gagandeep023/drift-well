@@ -1,6 +1,6 @@
 {
   "name": "@gagandeep023/drift-well",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A physics browser game where you navigate a particle through gravity wells to reach checkpoints",
   "main": "dist/index.cjs",
   "module": "dist/index.js",
